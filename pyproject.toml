@@ -14,7 +14,7 @@ python = "^3.9"
 [tool.poetry.dev-dependencies]
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_games:main"
+brain-games = "brain_games.scripts.Brain_games:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

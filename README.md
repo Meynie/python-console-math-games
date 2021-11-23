@@ -3,4 +3,6 @@
 
 <a href="https://codeclimate.com/github/Meynie/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/3756d8afbea263dbe034/maintainability" /></a>
 
-https://github.com/Meynie/python-project-lvl1/workflows/github-actions/badge.svg
+Main branch status
+
+![main](https://github.com/{Meynie}/{python-project-lvl1}/workflows/github-actions/badge.svg)

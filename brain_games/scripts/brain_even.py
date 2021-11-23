@@ -31,7 +31,6 @@ def main():
         if c == 3:
             print('Congratulations,', name)
             break
-            
 
 
 if __name__ == '__main__':

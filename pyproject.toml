@@ -1,12 +1,19 @@
 [tool.poetry]
-name = "first-project"
+name = "hexlet-code"
 version = "0.1.0"
 description = ""
 authors = ["Olga <ol.nevskaya@mail.ru>"]
 packages = [
   { include = "brain_games" },
 ]
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+repository = "https://github.com/Meynie/python-project-lvl1"
 
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/Meynie/python-project-lvl1"
 
 [tool.poetry.dependencies]
 python = "^3.9"

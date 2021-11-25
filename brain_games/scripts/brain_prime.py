@@ -39,7 +39,6 @@ def main():
         else:
             c = 0
             print("Let's try again,", name)
-            print(simple_num(num))
             break
         if c == 3:
             print('Congratulations,', name)

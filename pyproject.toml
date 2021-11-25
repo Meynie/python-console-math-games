@@ -22,7 +22,7 @@ python = "^3.9"
 
 [tool.poetry.scripts]
 brain-even = "brain_games.scripts.brain_even:main"
-brain-games = "brain_games.scripts.Brain_games:main"
+brain-games = "brain_games.scripts.brain_games:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"

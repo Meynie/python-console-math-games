@@ -25,9 +25,7 @@ def main():
         else:
             c = 0
             print("Let's try again,", name)
-            print()
-            time.sleep(3)
-            continue
+            break
         if c == 3:
             print('Congratulations,', name)
             break

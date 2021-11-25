@@ -29,9 +29,7 @@ def main():
             else:
                 print(answer, 'is wrong answer:(. Correct answer:', answ)
                 print("Let's try again,", name)
-                print()
-                time.sleep(3)
-                continue
+                break
         elif z == '-':
             answ = rand_number_1 - rand_number_2
             if answer == answ:
@@ -41,9 +39,7 @@ def main():
                 print(answer, 'is wrong answer:(.')
                 print('Correct answer:', answ)
                 print("Let's try again,", name)
-                print()
-                time.sleep(3)
-                continue
+                break
         else:
             answ = rand_number_1 * rand_number_2
             if answer == answ:
@@ -52,9 +48,7 @@ def main():
             else:
                 print(answer, 'is wrong answer:(. Correct answer:', answ)
                 print("Let's try again,", name)
-                print()
-                time.sleep(3)
-                continue
+                break
         if c == 3:
             print('Congratulations,', name)
             break

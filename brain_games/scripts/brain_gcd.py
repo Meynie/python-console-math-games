@@ -36,9 +36,7 @@ def main():
         else:
             print(answer, 'is wrong answer:(. Correct answer:', answ)
             print("Let's try again,", name)
-            print()
-            time.sleep(3)
-            continue
+            break
         if c == 3:
             print('Congratulations,', name)
             break

@@ -16,7 +16,9 @@ repository = "https://github.com/Meynie/python-project-lvl1"
 "Bug Tracker" = "https://github.com/Meynie/python-project-lvl1"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
+prompt = "^0.4.1"
+flake8 = "^4.0.1"
 
 [tool.poetry.dev-dependencies]
 

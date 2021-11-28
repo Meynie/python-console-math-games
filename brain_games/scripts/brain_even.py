@@ -27,12 +27,12 @@ def main():
         elif rand_number % 2 != 0 and answer == 'yes':
             c = 0
             print("'yes' is wrong answer ;(. Correct answer was 'no'.")
-            print("Let's try again,", name)
+            print("Let's try again, " + name + '!')
             break
         elif rand_number % 2 == 0 and answer == 'no':
             c = 0
             print("'no' is wrong answer ;(. Correct answer was 'no'.")
-            print("Let's try again,", name)
+            print("Let's try again, " + name + '!')
             break
         if c == 3:
             print('Congratulations,', name)

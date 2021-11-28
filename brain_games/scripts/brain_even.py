@@ -34,9 +34,10 @@ def main():
         else:
             print(f"'{answer}' is wrong answer ;(. \
 Correct answer was '{correct_answer}'.")
+            print(f'Let\'s try again, {NAME}!')
             break
         if c == 3:
-            print('Congratulations, ' + NAME + '!')
+            print(f'Congratulations, {NAME}!')
             break
 
 

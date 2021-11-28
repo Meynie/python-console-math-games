@@ -7,7 +7,6 @@ import time
 print('Welcome to the Brain Games!')
 name = prompt.string('May I have your name? ')
 print('Hello,', name)
-print('What number is missing in the progression?')
 
 
 def posl():
@@ -24,6 +23,9 @@ def posl():
         posl.append(rand_number + step)
         rand_number += step
     return posl
+
+
+print('What number is missing in the progression?')
 
 
 def main():

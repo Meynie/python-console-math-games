@@ -44,10 +44,11 @@ def main():
             c += 1
         else:
             c = 0
-            print("Let's try again,", name)
+            print("'" + str(answer) + "'" + ' is wrong answer:(. Correct answer was ' + "'" + str(a) + "'" + '.')
+            print("Let's try again, " + name + '!')
             break
         if c == 3:
-            print('Congratulations,', name)
+            print('Congratulations, ' + name + '!')
             break
 
 

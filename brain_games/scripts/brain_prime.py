@@ -6,7 +6,7 @@ import time
 
 print('Welcome to the Brain Games!')
 name = prompt.string('May I have your name? ')
-print('Hello,', name)
+print('Hello, ' + name + '!')
 
 
 def simple_num(num):
@@ -36,12 +36,18 @@ def main():
         elif answer == 'no' and simple_num(num) is False:
             c += 1
             print('Correct!')
-        else:
+        elif answer == 'no' and simple_num(num) is True:
             c = 0
-            print("Let's try again,", name)
+            print("'" + str(answer) + "'" + " is wrong answer:(. Correct answer was 'yes'.")
+            print("Let's try again, " + name + '!')
+            break
+        elif answer == 'yes' and simple_num(num) is Falsw:
+            c = 0
+            print("'" + str(answer) + "'" + " is wrong answer:(. Correct answer was 'no'.")
+            print("Let's try again, " + name + '!')
             break
         if c == 3:
-            print('Congratulations,', name)
+            print('Congratulations, ' + name + '!')
             break
 
 

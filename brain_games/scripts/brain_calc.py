@@ -6,7 +6,7 @@ import time
 
 print('Welcome to the Brain Games!')
 name = prompt.string('May I have your name? ')
-print('Hello,', name)
+print('Hello, ' + name + '!')
 
 
 def main():
@@ -27,8 +27,8 @@ def main():
                 print('Correct!')
                 c += 1
             else:
-                print(answer, 'is wrong answer:(. Correct answer:', answ)
-                print("Let's try again,", name)
+                print("'" + str(answer) + "'" + ' is wrong answer:(. Correct answer was ' + "'" + str(answ) + "'" + '.')
+                print("Let's try again, " + name + '!')
                 break
         elif z == '-':
             answ = rand_number_1 - rand_number_2
@@ -37,8 +37,8 @@ def main():
                 c += 1
             else:
                 print(answer, 'is wrong answer:(.')
-                print('Correct answer:', answ)
-                print("Let's try again,", name)
+                print('Correct answer: ' + str(answ) + '.')
+                print("Let's try again, " + name + '!')
                 break
         else:
             answ = rand_number_1 * rand_number_2
@@ -46,11 +46,11 @@ def main():
                 print('Correct!')
                 c += 1
             else:
-                print(answer, 'is wrong answer:(. Correct answer:', answ)
-                print("Let's try again,", name)
+                print(answer, 'is wrong answer:(. Correct answer ' + "'" + str(answ) + "'" + '.')
+                print("Let's try again, " + name + '!')
                 break
         if c == 3:
-            print('Congratulations,', name)
+            print('Congratulations, ' + name + '!')
             break
 
 

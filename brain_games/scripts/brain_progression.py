@@ -5,7 +5,7 @@ import prompt
 
 print('Welcome to the Brain Games!')
 name = prompt.string('May I have your name? ')
-print('Hello,', name)
+print('Hello, ' + name + '!')
 
 
 def posl():
@@ -31,13 +31,10 @@ def main():
     c = 0
     while c < 4:
         lis = posl()
-        iscl = random.randint(0, len(lis))
+        iscl = random.randint(0, len(lis) - 1)
         a = lis[iscl]
         lis.insert(iscl, '..')
-        if iscl != 0:
-            lis.pop(iscl + 1)
-        elif iscl == 0:
-            lis.pop(iscl + 1)
+        lis.pop(iscl + 1)
         print('Question:', *lis)
         answer = prompt.integer('Your answer: ')
         if answer == a:

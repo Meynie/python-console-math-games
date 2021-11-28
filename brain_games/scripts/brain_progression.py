@@ -37,7 +37,7 @@ def main():
         elif iscl == 0:
             lis.pop(iscl + 1)
         print('What number is missing in the progression?')
-        print('Ouestion:', *lis)
+        print('Question:', *lis)
         answer = prompt.integer('Your answer: ')
         if answer == a:
             print('Correct!')

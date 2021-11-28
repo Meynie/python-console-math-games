@@ -27,7 +27,7 @@ def main():
         rand_number_1 = random.randint(start_of_range, end_of_range)
         rand_number_2 = random.randint(start_of_range, end_of_range)
         print('Find the greatest common divisor of given numbers')
-        print('Ouestion:', rand_number_1, rand_number_2)
+        print('Question:', rand_number_1, rand_number_2)
         answer = prompt.integer('Your answer: ')
         answ = max_del(rand_number_1, rand_number_2)
         if answer == answ:

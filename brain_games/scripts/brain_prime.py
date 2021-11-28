@@ -28,7 +28,7 @@ def main():
         end_of_range = 100
         num = random.randint(start_of_range, end_of_range)
         print('Answer "yes" if given number is prime. Otherwise answer "no".')
-        print('Ouestion:', num)
+        print('Question:', num)
         answer = prompt.string('Your answer: ')
         if answer == 'yes' and simple_num(num) is True:
             c += 1

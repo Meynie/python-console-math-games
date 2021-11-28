@@ -19,7 +19,7 @@ def main():
         rand_number_2 = random.randint(start_of_range, end_of_range)
         z = random.choice(symb)
         print('What is the result of the expression?')
-        print('Ouestion:', rand_number_1, z, rand_number_2)
+        print('Question:', rand_number_1, z, rand_number_2)
         answer = prompt.integer('Your answer: ')
         if z == '+':
             answ = rand_number_1 + rand_number_2
@@ -36,8 +36,7 @@ def main():
                 print('Correct!')
                 c += 1
             else:
-                print(answer, 'is wrong answer:(.')
-                print('Correct answer: ' + str(answ) + '.')
+                print("'" + str(answer) + "'" + ' is wrong answer:(. Correct answer was ' + "'" + str(answ) + "'" + '.')
                 print("Let's try again, " + name + '!')
                 break
         else:
@@ -46,7 +45,7 @@ def main():
                 print('Correct!')
                 c += 1
             else:
-                print(answer, 'is wrong answer:(. Correct answer ' + "'" + str(answ) + "'" + '.')
+                print("'" + str(answer) + "'" + ' is wrong answer:(. Correct answer was ' + "'" + str(answ) + "'" + '.')
                 print("Let's try again, " + name + '!')
                 break
         if c == 3:

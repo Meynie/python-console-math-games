@@ -41,7 +41,7 @@ def main():
             print("'" + str(answer) + "'" + " is wrong answer:(. Correct answer was 'yes'.")
             print("Let's try again, " + name + '!')
             break
-        elif answer == 'yes' and simple_num(num) is Falsw:
+        elif answer == 'yes' and simple_num(num) is False:
             c = 0
             print("'" + str(answer) + "'" + " is wrong answer:(. Correct answer was 'no'.")
             print("Let's try again, " + name + '!')

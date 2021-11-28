@@ -13,39 +13,37 @@ START_OF_RANGE = 1
 END_OF_RANGE = 100
 
 
-def simple_num(num):
+def simple_num():
     '''Проверка простое ли число'''
+    number = random.randint(START_OF_RANGE, END_OF_RANGE)
+    text_question = f'{number}'
     count = 0
-    for i in range(2, (num // 2) + 1):
-        if num % i == 0:
+    for i in range(2, (number // 2) + 1):
+        if number % i == 0:
             count += 1
-    if count == 0 or num == 2:
-        return True
-    else:
-        return False
+    if count == 0 or number == 2:
+        correct_answer = 'yes'
+        return text_question, correct_answer
+    correct_answer = 'no'
+    return text_question, correct_answer
 
 
 def main():
-    if simple_num is True:
-        correct_answer = 'yes'
-    else:
-        correct_answer = 'no'
     c = 0
     while c < 4:
-        num = random.randint(START_OF_RANGE, END_OF_RANGE)
-        print('Question:', num)
+        text_question, correct_answer = simple_num()
+        print(f'Question: {text_question}')
         answer = prompt.string('Your answer: ')
         if answer == correct_answer:
             c += 1
             print('Correct!')
-        elif answer != correct_answer:
-            c = 0
-            print("'" + str(answer) + "'" + " is wrong answer:(.")
-            print("Correct answer was " + "'" + correct_answer + "'.")
-            print("Let's try again, " + NAME + '!')
+        else:
+            print(f"'{answer}' is wrong answer ;(. \
+Correct answer was '{correct_answer}'.")
+            print(f'Let\'s try again, {NAME}!')
             break
         if c == 3:
-            print('Congratulations, ' + NAME + '!')
+            print(f'Congratulations, {NAME}!')
             break
 
 

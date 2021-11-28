@@ -20,8 +20,10 @@ def main():
         answer = prompt.string('Your answer: ')
         if rand_number % 2 == 0 and answer == 'yes':
             c += 1
+            print('Correct!')
         elif rand_number % 2 != 0 and answer == 'no':
             c += 1
+            print('Correct!')
         elif rand_number % 2 != 0 and answer == 'yes':
             c = 0
             print("'yes' is wrong answer ;(. Correct answer was 'no'.")

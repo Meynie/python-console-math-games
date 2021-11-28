@@ -33,10 +33,10 @@ def main():
     while c < 4:
         lis = posl()
         iscl = random.randint(0, len(lis))
-        a = lis[iscl - 1]
+        a = lis[iscl]
         lis.insert(iscl, '..')
         if iscl != 0:
-            lis.pop(iscl - 1)
+            lis.pop(iscl + 1)
         elif iscl == 0:
             lis.pop(iscl + 1) 
         print('Question:', *lis)
@@ -44,7 +44,7 @@ def main():
         if answer == a:
             print('Correct!')
             c += 1
-        else:
+        elif answer != a:
             c = 0
             print("'" + str(answer) + "'" + ' is wrong answer:(. Correct answer was ' + "'" + str(a) + "'" + '.')
             print("Let's try again, " + name + '!')

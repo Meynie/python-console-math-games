@@ -35,7 +35,7 @@ def main():
             print("Let's try again, " + name + '!')
             break
         if c == 3:
-            print('Congratulations,', name)
+            print('Congratulations, ' + name + '!')
             break
 
 

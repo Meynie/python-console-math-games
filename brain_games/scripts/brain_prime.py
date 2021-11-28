@@ -4,8 +4,13 @@ import random
 import prompt
 
 print('Welcome to the Brain Games!')
-name = prompt.string('May I have your name? ')
-print('Hello, ' + name + '!')
+NAME = prompt.string('May I have your name? ')
+print('Hello, ' + NAME + '!')
+print('Answer "yes" if given number is prime. Otherwise answer "no".')
+
+
+START_OF_RANGE = 1
+END_OF_RANGE = 100
 
 
 def simple_num(num):
@@ -21,34 +26,26 @@ def simple_num(num):
 
 
 def main():
+    if simple_num is True:
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
     c = 0
     while c < 4:
-        start_of_range = 1
-        end_of_range = 100
-        num = random.randint(start_of_range, end_of_range)
-        print('Answer "yes" if given number is prime. Otherwise answer "no".')
+        num = random.randint(START_OF_RANGE, END_OF_RANGE)
         print('Question:', num)
         answer = prompt.string('Your answer: ')
-        if answer == 'yes' and simple_num(num) is True:
+        if answer == correct_answer:
             c += 1
             print('Correct!')
-        elif answer == 'no' and simple_num(num) is False:
-            c += 1
-            print('Correct!')
-        elif answer == 'no' and simple_num(num) is True:
+        elif answer != correct_answer:
             c = 0
             print("'" + str(answer) + "'" + " is wrong answer:(.")
-            print("Correct answer was 'yes'.")
-            print("Let's try again, " + name + '!')
-            break
-        elif answer == 'yes' and simple_num(num) is False:
-            c = 0
-            print("'" + str(answer) + "'" + " is wrong answer:(.")
-            print("Correct answer was 'no'.")
-            print("Let's try again, " + name + '!')
+            print("Correct answer was " + "'" + correct_answer + "'.")
+            print("Let's try again, " + NAME + '!')
             break
         if c == 3:
-            print('Congratulations, ' + name + '!')
+            print('Congratulations, ' + NAME + '!')
             break
 
 

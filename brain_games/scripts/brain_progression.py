@@ -7,6 +7,7 @@ import time
 print('Welcome to the Brain Games!')
 name = prompt.string('May I have your name? ')
 print('Hello,', name)
+print('What number is missing in the progression?')
 
 
 def posl():
@@ -35,8 +36,7 @@ def main():
         if iscl != 0:
             lis.pop(iscl - 1)
         elif iscl == 0:
-            lis.pop(iscl + 1)
-        print('What number is missing in the progression?')
+            lis.pop(iscl + 1) 
         print('Question:', *lis)
         answer = prompt.integer('Your answer: ')
         if answer == a:

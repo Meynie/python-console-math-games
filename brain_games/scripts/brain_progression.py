@@ -2,7 +2,6 @@
 
 import random
 import prompt
-import time
 
 print('Welcome to the Brain Games!')
 name = prompt.string('May I have your name? ')
@@ -38,7 +37,7 @@ def main():
         if iscl != 0:
             lis.pop(iscl + 1)
         elif iscl == 0:
-            lis.pop(iscl + 1) 
+            lis.pop(iscl + 1)
         print('Question:', *lis)
         answer = prompt.integer('Your answer: ')
         if answer == a:
@@ -46,7 +45,8 @@ def main():
             c += 1
         elif answer != a:
             c = 0
-            print("'" + str(answer) + "'" + ' is wrong answer:(. Correct answer was ' + "'" + str(a) + "'" + '.')
+            print("'" + str(answer) + "'" + ' is wrong answer:(.')
+            print('Correct answer was ' + "'" + str(a) + "'" + '.')
             print("Let's try again, " + name + '!')
             break
         if c == 3:

@@ -13,6 +13,3 @@ __brain games is a game that tests your mathematical thinking.__
 | brain-progression |  you must specify the missing member of the given arithmetic progression | 
 | brain-primen | you must answer the question correctly: is the given number prime?  | 
 
-### The package is installed using:
-	
-	pip install --user
